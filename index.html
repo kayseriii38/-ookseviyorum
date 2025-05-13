@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadece Nisa'ya</title>
+    <style>
+        body {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Georgia', serif;
+            color: white;
+            text-align: center;
+        }
+        .container { margin-top: 20%; }
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #ff5e7a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+    <script>
+        function showPasswordPrompt() {
+            const password = prompt("Şifreyi gir: (ipucu: çıkma tarihiniz)");
+            if (password === "18102024") {
+                window.location.href = "anilar.html";
+            } else {
+                alert("Şifre yanlış. Lütfen tekrar dene.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Merhaba Nisa... Bu site sadece senin için hazırlandı.</h1>
+        <button onclick="showPasswordPrompt()">Beni Seviyorsan Bas</button>
+    </div>
+</body>
+</html>
